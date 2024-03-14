@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a webform submission form.
+ *
+ * Available variables:
+ * - form: The webform submission form.
+ *
+ * @ingroup themeable
+ */
+#}
+
+<form class="form mt-3" action="{{ form['#action'] }}" method="{{ form['#method'] }}">
+    <div class="form-check mb-3">
+        <label class="form-check-label">
+            {{ form['elements']['check'] }}
+        </label>
+    </div>
+    <div class="input-group">
+        <input name="{{ form['elements']['email']['#name'] }}" type="{{ form['elements']['email']['#type'] }}" class="form-control" placeholder="Enter your email" required>
+        <button class="btn" type="{{ form['elements']['actions']['submit']['#type'] }}"><i class="fa fa-paper-plane"></i></button>
+    </div>
+</form>

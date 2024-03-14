@@ -1,0 +1,7 @@
+.ddev
+.vscode
+vendor
+web/core
+web/profiles
+web/modules/contrib
+web/themes/contrib
